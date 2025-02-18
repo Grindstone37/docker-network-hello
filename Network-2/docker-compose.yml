@@ -1,15 +1,1 @@
-version: "3.8"
-
-services:
-  app:
-    #image: mongoapp
-    build: .
-    environment:
-      MONGO_URL: "mongodb://db:27017/test"
-    depends_on:
-      - db
-    ports:
-      - "3000:3000"
-
-  db:
-    image: mongo
+#create ur own compose
