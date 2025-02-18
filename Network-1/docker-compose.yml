@@ -7,10 +7,10 @@ services:
     volumes:
       - ./simple-login-project:/usr/src/app/
     ports:
-      - "8080:80"
+      - "8081:80"
     networks: 
       mynet:
-        ipv4_address: "172.16.238.10"
+        ipv4_address: "10.8.130.100"
     depends_on: 
       - mysqldb
     links: 
@@ -23,7 +23,7 @@ services:
       - "3306:3306"    
     networks:
       mynet:
-        ipv4_address: "172.16.238.11"
+        ipv4_address: "10.8.130.101"
     environment:
       MYSQL_ROOT_PASSWORD: "root"
     volumes:
@@ -37,4 +37,4 @@ networks:
     ipam:
       driver: default
       config:
-      - subnet: 172.16.238.0/24
+      - subnet: 10.8.130.0/24
