@@ -1,2 +1,3 @@
-# communication-between-docker-containers
-This example, illustrates how to communicate between two applications in two different docker containers.
+#Docker-Network-1
+
+Contoh ilustrasi bagaimana 2 docker container saling komunikasi 
