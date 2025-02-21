@@ -10,7 +10,7 @@ app.get('/', async (_req, res) => {
     const client = new MongoClient(mongoUri, {serverSelectionTimeoutMS: 3000});
     await client.connect();
     await client.close();
-    res.send('✅ Connected DB');
+    res.send('✅ Connected DB, Congrats');
   } catch (error) {
     res.status(500).send('❌ Error DB: ' + error);
   }
