@@ -6,7 +6,7 @@ WORKDIR /usr/src
 
 RUN npm install
 
-COPY [".", "/usr/src/"]
+COPY [".", "/usr/src/]
 
 EXPOSE 300
 
