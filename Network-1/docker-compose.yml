@@ -37,4 +37,4 @@ networks:
     ipam:
       driver: default
       config:
-      - subnet: 10.8.130.0/24
+      - subnet: 10.8.131.0/24
